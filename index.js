@@ -57,6 +57,7 @@ router.get('/', (req, res) => {
 
 router.post('/auth', (req, res) => {
   console.log("Validating User and Password");
+  // TODO: validate User
   console.log(req.body);
   let token = genToken(req.body.idUser);
   res.json({
